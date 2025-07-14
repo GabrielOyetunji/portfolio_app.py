@@ -93,9 +93,9 @@ Using Excel, I designed a clean, interactive dashboard that:
 
 The dashboard revealed that only 47% of targets were met, signaling critical gaps in certain regions and product lines.
 These insights support leadership in refining their sales strategies and resource allocation.""",
-        "image": "images/nova.png",
+        "image": "images/project1.png",
         "demo_url": "https://public.powerbi.com/view?id=example",
-        "github_url": ""  # Optional field added to prevent errors
+        "github_url": ""
     },
     {
         "title": "F1 Podium Prediction (2023)",
@@ -119,8 +119,11 @@ for project in projects:
     st.markdown(tool_tags, unsafe_allow_html=True)
 
     # Project image
-    image = Image.open(project["image"])
-    st.image(image, use_column_width=True)
+    try:
+        image = Image.open(project["image"])
+        st.image(image, use_container_width=True)
+    except FileNotFoundError:
+        st.warning(f"⚠️ Could not load image: {project['image']}")
 
     # Buttons
     if project.get("github_url"):
