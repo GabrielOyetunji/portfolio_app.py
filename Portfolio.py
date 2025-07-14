@@ -93,7 +93,7 @@ Using Excel, I designed a clean, interactive dashboard that:
 
 The dashboard revealed that only 47% of targets were met, signaling critical gaps in certain regions and product lines.
 These insights support leadership in refining their sales strategies and resource allocation.""",
-        "image": "images/project1.png",
+        "image": "images/nova.png",
         "demo_url": "https://public.powerbi.com/view?id=example",
         "github_url": ""  # Optional field added to prevent errors
     },
