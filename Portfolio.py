@@ -81,11 +81,23 @@ projects = [
     {
         "title": "NovaTech Regional Sales Dashboard",
         "description": "Interactive Power BI dashboard tracking monthly sales vs targets across four key regions.",
-        "tools": ["Power BI", "Excel", "Python"],
+        "tools": ["Excel"],
+        "project excerpt": "Created an interactive Excel dashboard for NovaTech to analyze 2025 sales by region and product,
+        uncovering underperformance trends and providing strategic insights through KPIs, charts, and segmentation.",
+        "descritption": "NovaTech Distributors, a growing Canadian tech wholesaler, needed a clear view of its 2025 sales performance to inform strategic decisions.
+        This project involved analyzing actual vs. target sales across four regions, identifying revenue leaders and laggards among products, and segmenting customers by region and type.
+        Using Excel, I designed a clean, interactive dashboard that:
+        Highlights key performance indicators (KPIs) like total sales, variance, and % target met
+        Visualizes monthly trends and regional performance fluctuations
+        Ranks top and bottom products by revenue
+        Segments customers into Retail, Online, and Wholesale categories
+        The dashboard revealed that only 47% of targets were met, signaling critical gaps in certain regions and product lines.
+        These insights support leadership in refining their sales strategies and resource allocation.
+        This project demonstrates my strengths in data analysis, visualization, and storytelling, turning business data into actionable intelligence.",
         "image": "images/project1.png",
-        "github_url": "https://github.com/gabrieloyetunji/novatech-sales",
         "demo_url": "https://public.powerbi.com/view?id=example"
     },
+    
     {
         "title": "F1 Podium Prediction (2023)",
         "description": "A machine learning model predicting which drivers will finish in the top 3 using logistic regression.",
