@@ -82,20 +82,20 @@ projects = [
         "title": "NovaTech Regional Sales Dashboard",
         "description": "Interactive Excel dashboard tracking monthly sales vs targets across four key regions.",
         "tools": ["Excel"],
-        "project_excerpt": """Created an Excel dashboard analyzing 2025 sales vs targets across four regions, highlighting performance gaps and key insights for leadership.""",
+        "project_excerpt": "Created an Excel dashboard analyzing 2025 sales vs targets across four regions, highlighting performance gaps and key insights for leadership.",
         "full_description": """NovaTech Distributors, a growing Canadian tech wholesaler, needed a clear view of its 2025 sales performance to inform strategic decisions.
+
 This project involved analyzing actual vs. target sales across four regions, identifying revenue leaders and laggards among products, and segmenting customers by region and type.
+
 Using Excel, I designed a clean, interactive dashboard that:
 - Highlights key performance indicators (KPIs) like total sales, variance, and % target met
 - Visualizes monthly trends and regional performance fluctuations
 - Ranks top and bottom products by revenue
 - Segments customers into Retail, Online, and Wholesale categories
 
-The dashboard revealed that only 47% of targets were met, signaling critical gaps in certain regions and product lines.
-These insights support leadership in refining their sales strategies and resource allocation.""",
-        "image": "images/nova.png",
-        "demo_url": "https://public.powerbi.com/view?id=example",
-        "github_url": ""
+The dashboard revealed that only 47% of targets were met, signaling critical gaps in certain regions and product lines. These insights support leadership in refining their sales strategies and resource allocation.
+""",
+        "image": "images/nova.png"
     },
     {
         "title": "F1 Podium Prediction (2023)",
@@ -109,10 +109,21 @@ These insights support leadership in refining their sales strategies and resourc
     }
 ]
 
+# -------------------------------
+# 💼 Render Each Project
+# -------------------------------
 for project in projects:
     st.markdown('<div class="project-card">', unsafe_allow_html=True)
     st.markdown(f"<div class='project-title'>{project['title']}</div>", unsafe_allow_html=True)
-    st.markdown(f"<p>{project['description']}</p>", unsafe_allow_html=True)
+
+    # Project excerpt
+    if "project_excerpt" in project:
+        st.markdown(f"<p>{project['project_excerpt']}</p>", unsafe_allow_html=True)
+
+    # Full description inside expander
+    if "full_description" in project:
+        with st.expander("📘 Read More"):
+            st.markdown(project["full_description"])
 
     # Tool tags
     tool_tags = " ".join([f"<span class='tool-tag'>{tool}</span>" for tool in project["tools"]])
@@ -125,7 +136,7 @@ for project in projects:
     except FileNotFoundError:
         st.warning(f"⚠️ Could not load image: {project['image']}")
 
-    # Buttons
+    # GitHub & Demo links
     if project.get("github_url"):
         if project["github_url"]:
             st.markdown(f"[🔗 GitHub]({project['github_url']})", unsafe_allow_html=True)
