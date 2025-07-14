@@ -54,8 +54,9 @@ st.markdown("📊 *Turning raw data into sharp insights.*")
 # 🧑‍💼 About Me
 # -------------------------------
 about_me = """
-I'm a passionate data analyst with strong skills in data cleaning, automation, and dashboard creation.  
-I use Power BI, Python, Excel, and SQL to help businesses uncover trends and drive smarter decisions.
+Data Analyst & Data Scientist focused on clarity, efficiency, and impact. 
+I use Python, SQL, Power BI, and Excel to clean data, build automated workflows,
+and design dashboards that guide better decisions — not just prettier reports..
 """
 st.markdown("### 🧾 About Me")
 st.write(about_me)
@@ -64,9 +65,7 @@ st.write(about_me)
 # 📜 Certifications
 # -------------------------------
 certifications = [
-    "✅ Data Analyst – DataCamp (April 2025)",
-    "✅ Excel to MySQL – Coursera (Feb 2024)",
-    "✅ Power BI Advanced – Udemy (Jan 2023)"
+    "✅ Data Analyst – DataCamp (April 2025)"
 ]
 
 st.markdown("### 📑 Certifications")
