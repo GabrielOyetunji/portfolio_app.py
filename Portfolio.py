@@ -81,7 +81,7 @@ NovaTech Distributors needed a clear view of its 2025 sales performance to infor
 
 The dashboard revealed that only 47% of targets were met, highlighting regional underperformance and guiding strategy refinement.
 """,
-        "image": "images/novatech_dashboard.png",
+        "image": "images/nova.png",
         "demo_url": "https://www.loom.com/share/19461c0fd60b408a80d9675aa1ff0de2?sid=417d9f22-4104-4c15-ad32-c6a63c0a2911",
         "github_url": ""
     },
