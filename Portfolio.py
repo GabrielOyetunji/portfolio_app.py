@@ -7,19 +7,19 @@ st.set_page_config(page_title="Gabriel Oyetunji | Portfolio", layout="wide")
 # Load profile image
 profile_image = Image.open("images/profile.jpg")
 
-# Custom dark theme with better color contrast
+# Custom dark theme with even darker background
 st.markdown("""
     <style>
     body {
-        background-color: #0e1117;
+        background-color: #050505;
         color: #E0E0E0;
         font-family: 'Segoe UI', sans-serif;
     }
     .main {
-        background-color: #0e1117;
+        background-color: #050505;
     }
     .project-card {
-        background-color: #1a1c23;
+        background-color: #121212;
         padding: 25px;
         border-radius: 14px;
         margin-bottom: 25px;
@@ -60,10 +60,10 @@ and design dashboards that guide better decisions — not just prettier reports.
 # Certifications
 st.markdown("### 📑 Certifications")
 certifications = [
-    "✅ Data Analyst – DataCamp (April 2025)"
+    "✅ [Data Analyst – DataCamp (April 2025)](https://www.datacamp.com/certificate/DA0022509689479)"
 ]
 for cert in certifications:
-    st.markdown(f"- {cert}")
+    st.markdown(f"- {cert}", unsafe_allow_html=True)
 
 # Projects
 st.markdown("### 🗂️ Projects")
