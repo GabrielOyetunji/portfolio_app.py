@@ -109,8 +109,8 @@ The dashboard revealed that only 47% of targets were met, highlighting regional 
 
 🌐 Streamlit Web App: An interactive app allowing users to upload their raw CSV files, preview a sample spectrum, adjust wavelength range with sliders, and export the trimmed dataset — no coding required.""",
             "image": "images/project2.png",
-            "demo_url": "",
-            "github_url": "https://github.com/gabrieloyetunji/f1-podium-predictor"
+            "demo_url": "https://www.loom.com/share/e372774ab4f74a1db40446944c25fa72?sid=3b9c31a3-ab27-469c-ae60-fe394d46f401",
+            "github_url": "https://github.com/GabrielOyetunji/uvvis-spectrophotometer-app"
         }
     ]
 
