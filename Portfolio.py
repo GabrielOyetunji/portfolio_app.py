@@ -100,17 +100,14 @@ The dashboard revealed that only 47% of targets were met, highlighting regional 
             "github_url": ""
         },
         {
-            "title": "F1 Podium Prediction (2023)",
-            "tools": ["Python", "Scikit-learn", "Pandas"],
-            "project_excerpt": "Built a predictive model for podium finishes using 2023 race & driver data.",
-            "full_description": """Trained on 2023 F1 data to classify whether a driver finishes in the Top 3.  
-Key features included:
-- Qualifying position  
-- Constructor team  
-- Track circuit  
-- Driver stats & weather
+            "title": "Interactive UV-Vis Spectra Trimmer with Python & Streamlit",
+            "tools": ["Python", "Streamlit", "Pandas"],
+            "project_excerpt": "This project was developed for a PhD researcher working on UV-Vis spectrophotometry data. The core challenge was handling large, messy CSV files generated from the CARY 50 spectrophotometer — which contained hundreds of paired columns for wavelength and absorbance readings.",
+            "full_description": """🧹 Data Cleaning Scripts: Python scripts that automate the removal of redundant headers, convert string values to numeric types, and filter the wavelength range (typically between 400–600 nm).
 
-Used logistic regression to predict podium finishes, achieving over 80% accuracy.""",
+📁 Batch Processing: A script that processes all 240 samples at once and exports a cleaned, trimmed CSV file for downstream analysis.
+
+🌐 Streamlit Web App: An interactive app allowing users to upload their raw CSV files, preview a sample spectrum, adjust wavelength range with sliders, and export the trimmed dataset — no coding required.""",
             "image": "images/project2.png",
             "demo_url": "",
             "github_url": "https://github.com/gabrieloyetunji/f1-podium-predictor"
